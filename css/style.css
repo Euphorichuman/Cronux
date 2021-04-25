@@ -201,6 +201,9 @@ body {
     box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color);
 }
 
+.inner-circle:hover { 
+    box-shadow: -5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color);
+}
 
 .play-button {
 	width: 60px;
