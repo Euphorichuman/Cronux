@@ -10,17 +10,56 @@
 </head>
 
 <header class="page-head">
-    <a class="tittle">Timer</a>
+    <a class="tittle" href="/">Timer</a>
     <button class="options">Options</button>
-
 </header>
 
 <body>
     <div class="box">
         <div class="box-clock">
-            <div class="digital-clock">Hola</div>
+            <div class="digital-clock">
+                <main class="clock-display">
+                    <div class="clock-field">
+                        <div class="numbers">
+                            <p class="hours"></p>
+                            <p class="placeholder">88</p>
+                            <p class="type">hour</p>
+                        </div>
+                        <div class="colon">
+                            <p>:</p>
+                        </div>
+                        <div class="numbers">
+                            <p class="minutes"></p>
+                            <p class="placeholder">88</p>
+                            <p class="type">minute</p>
+                        </div>
+                        <div class="colon">
+                            <p>:</p>
+                        </div>
+                        <div class="numbers">
+                            <p class="seconds"></p>
+                            <p class="placeholder">88</p>
+                            <p class="type">second</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
         </div>
+        <div class="outer-circle">
+            <div class="middle-circle">
+            
+                <button class="inner-circle">
+                    <div class="play-button" id="play">
+                        <img src="./source/play.svg" alt="Play button">
+                    </div>
+                </button>
+
+            </div>
+        </div>
+        <button class="restart">Restart</button>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
