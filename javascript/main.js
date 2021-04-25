@@ -30,7 +30,7 @@
                 if (color === "rgb(230, 248, 222)") {
                     this.style.background = "#f0f0f3";
                     this.style.border = 'var(--light-gray) solid 5px';
-                    this.style.boxShadow = 'inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color)';
+                    this.style.boxShadow = '20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color), inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color)';
                     btn.innerHTML = '<img src="./source/stop.svg" alt="Play button">';
                     
                 } else {

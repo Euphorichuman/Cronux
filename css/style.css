@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @font-face {
     font-family: 'digital-7';
-    src: url('./source/digital-7.ttf');
+    src: url("/source/digital-7.ttf");
 }
 
 :root {
@@ -69,8 +69,6 @@ body {
 
 .options:active {
     box-shadow: inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color);
-    /*background: var(--light-gray);
-    box-shadow: var(--light-gray);*/
 }
 
 .box {
@@ -186,31 +184,6 @@ body {
     box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color),
     inset 20px 20px 40px var(--shadow-color), inset -15px -15px 35px var(--light-color);
 }
-
-/*.inner-circle {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: transparent solid 5px;
-    cursor: pointer; 
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-
-    background: #e6f8de;
-    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color);
-}
-
-.inner-circle:hover { 
-    box-shadow: -5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color);
-}
-
-.inner-circle:active {
-    border: var(--light-gray) solid 5px;
-    box-shadow: inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color);
-}*/
 
 .inner-circle {
     position: absolute;
