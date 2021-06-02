@@ -1,0 +1,238 @@
+/* Import fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@font-face {
+    font-family: 'digital-7';
+    src: url("./source/digital-7.ttf");
+}
+
+:root {
+    /* Colors */
+    --white: #fff;
+    --light-gray: #f0f0f3;
+
+    --light-color: #ffffff;
+    --shadow-color: #cccccf;
+
+    /* Fonts */
+    --roboto-font: Roboto;
+    --font-style-bold: 700;
+}
+
+body {
+    font-family: 'digital-7', sans-serif;
+    font-display: block;
+    background: var(--light-gray);
+}
+
+.page-head {
+    background: var(--light-gray);
+
+    position: absolute;
+    display: flex;
+    left: 30%;
+    right: 30%;
+    top: 2%;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow:  20px 20px 40px var(--shadow-color), -20px -20px 40px var(--light-color);  
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tittle {
+    height: 40px;
+    padding: 0 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: #31546a;
+    text-decoration: none;
+}
+
+.options {
+	padding: 15px 30px;
+	background: var(--light-gray);
+	border: none;
+	border-radius: 50px;
+
+	color: #808080;
+	text-align: center;
+	outline: none;  
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+    
+	box-shadow: -20px -20px 40px var(--light-color),  20px 20px 40px var(--shadow-color);
+}
+
+.options:hover { 
+    box-shadow: -5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color);
+}
+
+.options:active {
+    box-shadow: inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color);
+}
+
+.box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    left: 30%;
+    right: 30%;
+    top: 5%;
+    bottom: 2%;
+    margin-top: 8%;
+
+    background: var(--light-gray);
+    border-radius: 30px;
+    box-shadow:  20px 20px 40px var(--shadow-color), -20px -20px 40px var(--light-color);
+}
+
+.box-clock {
+    padding: 15px 30px;
+    position: absolute;
+    display: flex;
+    left: 10%;
+    right: 10%;
+    top: 5%;
+    bottom: 70%;
+
+    background: var(--light-gray);
+    border-radius: 30px;
+    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color);
+}
+
+.digital-clock {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+
+    border: #a8a8a8 solid 2px;
+
+    background: linear-gradient(145deg, #cbd3c5, #afbca2);
+    border-radius: 26px;
+}
+
+.clock-display {
+    text-align: center;
+    color: #333631;
+}
+
+.clock-field {
+    margin-top: -21%;
+    display: flex;
+    justify-content: center;
+}
+
+.clock-field div {
+	display: inline-block;
+	position: relative;
+}
+
+.clock-field div p {
+	font-size: 90px;
+	position: relative;
+	z-index: 100;
+}
+
+.clock-field .numbers .placeholder {
+	color: #adb7a4;
+	position: absolute;
+	top: 0;
+	z-index: 50;
+}
+
+.clock-field .numbers .type {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: -118%;
+}
+
+
+
+.outer-circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    bottom: 20%;
+
+    border: var(--light-gray) solid 10px;
+    background: var(--light-gray);
+    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color),
+    inset 20px 20px 40px var(--shadow-color), inset -15px -15px 35px var(--light-color);
+}
+
+.middle-circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    border: var(--light-gray) solid 10px;
+    background: var(--light-gray);
+    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color),
+    inset 20px 20px 40px var(--shadow-color), inset -15px -15px 35px var(--light-color);
+}
+
+.inner-circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: transparent solid 5px;
+    cursor: pointer; 
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+    background: #e6f8de;
+    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color);
+}
+
+.inner-circle:hover { 
+    box-shadow: -5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color);
+}
+
+.play-button {
+	width: 60px;
+	height: 60px;
+}
+
+.restart {
+	padding: 15px 30px;
+    position: absolute;
+	border: none;
+	border-radius: 50px;
+
+    bottom: 5%;
+
+	color: #808080;
+	text-align: center;
+	outline: none;  
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+
+    background: var(--light-gray);
+	box-shadow: -20px -20px 40px var(--light-color),  20px 20px 40px var(--shadow-color);
+}
+
+.restart:hover { 
+    box-shadow: -5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color);
+}
+
+.restart:active {
+    box-shadow: inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color);
+}
