@@ -1,9 +1,12 @@
-let TOTAL_TIME = 8;
+let TOTAL_TIME = 0.5;
 const progress = document.querySelectorAll('.progress');
-const rightProgress = document.querySelector('.right .progress');
 progress[0].style.animation = `rotateAll ${TOTAL_TIME}s linear both`;
 progress[1].style.animation = `rotateAll ${TOTAL_TIME}s linear both`;
 progress[1].style.animationDelay = `${TOTAL_TIME}s`;
+
+function setTotalTime(time) {
+    TOTAL_TIME = time;
+}
 
 (() => {
     const init = () => {
@@ -63,6 +66,8 @@ progress[1].style.animationDelay = `${TOTAL_TIME}s`;
             minutes: minutes,
             seconds: seconds
         };
+        console.log(hours)
+        setTotalTime(hours);
     }
 
     const displayCurrentTime = () => {
