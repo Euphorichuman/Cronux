@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<header class="page-head">
-    <a class="tittle" href="/">Timer</a>
-    <button class="options">Options</button>
-</header>
-
 <body>
+    <header class="page-head">
+        <a class="tittle" href="/">Timer</a>
+        <button class="options">Options</button>
+    </header>
     <div class="box">
         <div class="box-clock">
             <div class="digital-clock">
@@ -46,19 +45,26 @@
             </div>
         </div>
         <div class="outer-circle">
+            <div class="circular">
+                <div class="circle">
+                    <div class="bar left">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="bar right">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
             <div class="middle-circle">
-            
                 <button class="inner-circle">
                     <div class="play-button" id="play">
                         <img src="./source/play.svg" alt="Play button">
                     </div>
                 </button>
-
             </div>
         </div>
         <button class="restart">Restart</button>
     </div>
-
     <script src="./javascript/main.js"></script>
 </body>
 
