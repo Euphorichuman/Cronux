@@ -1,8 +1,8 @@
-/* Import fonts */ 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @font-face {
-    font-family: 'digital-7';
-    src: url("./source/digital-7.ttf");
+    font-family: "digital-7";
+    src: url("../source/digital-7.ttf");
 }
 
 :root {
@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'digital-7', sans-serif;
+    font-family: "digital-7", sans-serif;
     font-display: block;
     background: var(--light-gray);
 }
@@ -84,6 +84,7 @@ body {
     top: 5%;
     bottom: 2%;
     margin-top: 8%;
+    z-index: -2;
 
     background: var(--light-gray);
     border-radius: 30px;
@@ -153,8 +154,6 @@ body {
   margin-top: -118%;
 }
 
-
-
 .outer-circle {
     position: absolute;
     display: flex;
@@ -162,13 +161,35 @@ body {
     align-items: center;
     height: 230px;
     width: 230px;
-    border-radius: 50%;
     bottom: 20%;
+    border-radius: 50%;
 
     border: var(--light-gray) solid 10px;
-    background: var(--light-gray);
-    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color),
-    inset 20px 20px 40px var(--shadow-color), inset -15px -15px 35px var(--light-color);
+    overflow: hidden;
+    box-shadow: 20px 20px 40px var(--shadow-color),
+                -15px -15px 35px var(--light-color),
+                inset 10px 10px 15px rgba(0, 0, 0, 0.1),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+}
+
+.outer-circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    z-index: -1;
+    filter: blur(30px);
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+    }
 }
 
 .middle-circle {
@@ -182,8 +203,10 @@ body {
 
     border: var(--light-gray) solid 10px;
     background: var(--light-gray);
-    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color),
-    inset 20px 20px 40px var(--shadow-color), inset -15px -15px 35px var(--light-color);
+    box-shadow: 10px 10px 415px rgba(0, 0, 0, 0.1), 
+                -10px -10px 15px rgba(255, 255, 255, 0.5),
+                inset 20px 20px 40px var(--shadow-color),
+                inset -15px -15px 35px var(--light-color);
 }
 
 .inner-circle {
