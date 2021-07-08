@@ -140,6 +140,12 @@ body {
 	z-index: 100;
 }
 
+.clock-field div input {
+	font-size: 90px;
+	position: relative;
+	z-index: 150;
+}
+
 .clock-field .numbers .placeholder {
 	color: #adb7a4;
 	position: absolute;
@@ -180,7 +186,6 @@ body {
     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
     z-index: -1;
     filter: blur(30px);
-    animation: animate 1s linear infinite;
 }
 
 @keyframes animate {
