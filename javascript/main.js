@@ -1,3 +1,13 @@
+let TOTAL_TIME = 0.5;
+const progress = document.querySelectorAll('.progress');
+progress[0].style.animation = `rotateAll ${TOTAL_TIME}s linear both`;
+progress[1].style.animation = `rotateAll ${TOTAL_TIME}s linear both`;
+progress[1].style.animationDelay = `${TOTAL_TIME}s`;
+
+function setTotalTime(time) {
+    TOTAL_TIME = time;
+}
+
 (() => {
     const init = () => {
         updateClock();
@@ -17,7 +27,7 @@
         playButton();
     };
 
-    playButton = () => {
+    const playButton = () => {
         var elems = document.getElementsByClassName("inner-circle");
         var btn = document.getElementById("play");
         var progressBar = document.getElementsByClassName("circularProgressBar");
@@ -52,7 +62,7 @@
         };
     };
 
-    getCurrentTime = () => {
+    const getCurrentTime = () => {
         let fullTime = new Date();
         let hours = fullTime.getHours();
         let minutes = fullTime.getMinutes();
@@ -67,7 +77,7 @@
         };
     };
 
-    displayCurrentTime = () => {
+    const displayCurrentTime = () => {
         let hours = window.clock.time.hours
         let minutes = window.clock.time.minutes;
         let seconds = window.clock.time.seconds;

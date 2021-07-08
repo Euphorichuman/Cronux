@@ -34,40 +34,37 @@ body {
     top: 2%;
     padding: 20px 40px;
     border-radius: 20px;
-    box-shadow:  20px 20px 40px var(--shadow-color), -20px -20px 40px var(--light-color);  
+    box-shadow: 20px 20px 40px var(--shadow-color), -20px -20px 40px var(--light-color);
 
     justify-content: space-between;
     align-items: center;
 }
-
 .tittle {
     height: 40px;
     padding: 0 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 35px;
     color: #31546a;
     text-decoration: none;
 }
 
 .options {
-	padding: 15px 30px;
-	background: var(--light-gray);
-	border: none;
-	border-radius: 50px;
+    padding: 15px 30px;
+    background: var(--light-gray);
+    border: none;
+    border-radius: 50px;
 
-	color: #808080;
-	text-align: center;
-	outline: none;  
-	cursor: pointer;
-	transition: 0.2s ease-in-out;
-    
-	box-shadow: -20px -20px 40px var(--light-color),  20px 20px 40px var(--shadow-color);
+    color: #808080;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    box-shadow: -20px -20px 40px var(--light-color), 20px 20px 40px var(--shadow-color);
 }
-
-.options:hover { 
+.options:hover {
     box-shadow: -5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color);
 }
-
 .options:active {
     box-shadow: inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color);
 }
@@ -78,7 +75,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+
     left: 30%;
     right: 30%;
     top: 5%;
@@ -88,9 +85,8 @@ body {
 
     background: var(--light-gray);
     border-radius: 30px;
-    box-shadow:  20px 20px 40px var(--shadow-color), -20px -20px 40px var(--light-color);
+    box-shadow: 20px 20px 40px var(--shadow-color), -20px -20px 40px var(--light-color);
 }
-
 .box-clock {
     padding: 15px 30px;
     position: absolute;
@@ -102,9 +98,8 @@ body {
 
     background: var(--light-gray);
     border-radius: 30px;
-    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color);
+    box-shadow: 20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color);
 }
-
 .digital-clock {
     position: absolute;
     left: 8px;
@@ -117,47 +112,35 @@ body {
     background: linear-gradient(145deg, #cbd3c5, #afbca2);
     border-radius: 26px;
 }
-
 .clock-display {
     text-align: center;
     color: #333631;
 }
-
 .clock-field {
     margin-top: -21%;
     display: flex;
     justify-content: center;
 }
-
 .clock-field div {
-	display: inline-block;
-	position: relative;
+    display: inline-block;
+    position: relative;
 }
-
 .clock-field div p {
-	font-size: 90px;
-	position: relative;
-	z-index: 100;
+    font-size: 90px;
+    position: relative;
+    z-index: 100;
 }
-
-.clock-field div input {
-	font-size: 90px;
-	position: relative;
-	z-index: 150;
-}
-
 .clock-field .numbers .placeholder {
-	color: #adb7a4;
-	position: absolute;
-	top: 0;
-	z-index: 50;
+    color: #adb7a4;
+    position: absolute;
+    top: 0;
+    z-index: 50;
 }
-
 .clock-field .numbers .type {
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: -118%;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -118%;
 }
 
 .outer-circle {
@@ -213,7 +196,6 @@ body {
                 inset 20px 20px 40px var(--shadow-color),
                 inset -15px -15px 35px var(--light-color);
 }
-
 .inner-circle {
     position: absolute;
     display: flex;
@@ -221,46 +203,85 @@ body {
     align-items: center;
 
     border: transparent solid 5px;
-    cursor: pointer; 
+    cursor: pointer;
     height: 80px;
     width: 80px;
     border-radius: 50%;
 
     background: #e6f8de;
-    box-shadow:  20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color);
+    box-shadow: 20px 20px 40px var(--shadow-color), -15px -15px 35px var(--light-color);
+    transition: 0.3s ease-out;
 }
-
-.inner-circle:hover { 
+.inner-circle:hover {
     box-shadow: -5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color);
 }
-
 .play-button {
-	width: 60px;
-	height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 .restart {
-	padding: 15px 30px;
+    padding: 15px 30px;
     position: absolute;
-	border: none;
-	border-radius: 50px;
+    border: none;
+    border-radius: 50px;
 
     bottom: 5%;
 
-	color: #808080;
-	text-align: center;
-	outline: none;  
-	cursor: pointer;
-	transition: 0.2s ease-in-out;
+    color: #808080;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 
     background: var(--light-gray);
-	box-shadow: -20px -20px 40px var(--light-color),  20px 20px 40px var(--shadow-color);
+    box-shadow: -20px -20px 40px var(--light-color), 20px 20px 40px var(--shadow-color);
 }
-
-.restart:hover { 
+.restart:hover {
     box-shadow: -5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color);
 }
-
 .restart:active {
     box-shadow: inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color);
+}
+
+
+.circular {
+    position: relative;
+    height: 114px;
+    width: 114px;
+    z-index: 0;
+    transform: scale(2);
+}
+.circular .bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, #fff 35%, #eee8 60%, #fff 80%);
+    border-radius: 100%;
+    clip: rect(0px, 114px, 114px, 57px);
+}
+.circle .bar .progress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    clip: rect(0px, 57px, 114px, 0px);
+}
+.circle .left .progress {
+    z-index: 1;
+    background: linear-gradient(90deg, #f9dc5c, #d44420);
+}
+
+.circle .right {
+    transform: rotate(180deg);
+    z-index: 3;
+}
+.circle .right .progress {
+    background: linear-gradient(270deg, #f9dc5c, #d44420);
+}
+
+@keyframes rotateAll {
+    100% {
+        transform: rotate(180deg);
+    }
 }
