@@ -1,13 +1,3 @@
-let TOTAL_TIME = 0.5;
-const progress = document.querySelectorAll('.progress');
-progress[0].style.animation = `rotateAll ${TOTAL_TIME}s linear both`;
-progress[1].style.animation = `rotateAll ${TOTAL_TIME}s linear both`;
-progress[1].style.animationDelay = `${TOTAL_TIME}s`;
-
-function setTotalTime(time) {
-    TOTAL_TIME = time;
-}
-
 (() => {
     const init = () => {
         updateClock();
