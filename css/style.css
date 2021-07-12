@@ -112,9 +112,10 @@ header .dropdown i{
 }
 
 .options li {
-    color: #808080;
+    display: flex;
     position: relative;
     padding: 0.5em 1em;
+    color: #808080;
     list-style-type: none;
 }
 
@@ -133,6 +134,7 @@ header .dropdown i{
 }
 
 .options li a {
+    width: 100%;
     color: #808080;
     text-decoration: none;
 }
