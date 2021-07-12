@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronux</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/clockStyle.css">
+    <link rel="stylesheet" href="./css/stopwatchStyle.css">
+    <link rel="stylesheet" href="./css/timerStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <ul class="dropdown" id="dropdown">
+                <div class="options-dropdown">
+                    <i class="material-icons" id="code-icon">chevron_right</i>
+                    <input type="text" value="Options" readonly="" id="input-option">
+                </div>
+
+                <!--Options list dropdown-->
+                <ul class="options" id="options">
+                    <li opName="Clock"><a href="./clock.html">Clock</a></li>
+                    <li opName="Stopwatch"><a href="./stopwatch.html">Stopwatch</a></li>
+                    <li opNme="Timer"><a href="https://www.youtube.com/watch?v=YbgT-H39cnQ">Timer</a></li>
+                </ul>
+            </ul>
+            <p>CRONUX</p>
+            <div class="dark-mode">
+                <i class="material-icons" id="dark-mode" onclick="darkMode();">light_mode</i>
+            </div>
+        </header>
+        <div class="box-clock">
+            <div class="digital-clock">
+                <div class="clock-field">
+                    <div class="numbers">
+                        <p class="hours">00</p>
+                        <p class="placeholder">88</p>
+                        <p class="type">hour</p>
+                    </div>
+                    <div class="colon">
+                        <p>:</p>
+                    </div>
+                    <div class="numbers">
+                        <p class="minutes">00</p>
+                        <p class="placeholder">88</p>
+                        <p class="type">minute</p>
+                    </div>
+                    <div class="colon">
+                        <p>:</p>
+                    </div>
+                    <div class="numbers">
+                        <p class="seconds">00</p>
+                        <p class="placeholder">88</p>
+                        <p class="type">second</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="author-info">
+                <a href="https://github.com/Euphorichuman" target="_blank" rel="noopener noreferrer"
+                    class="material-icons" id="code-icon">code</a>
+                <a href="https://github.com/Euphorichuman" target="_blank" rel="noopener noreferrer"
+                    class="author-link">By Euphorichuman</a>
+            </div>
+            <div class="tools">
+                <a href="https://github.com/Euphorichuman/TimerWeb/blob/main/README.md" target="_blank"
+                    rel="noopener noreferrer" class="material-icons" id="info-icon">info</a>
+                <a href="javascript:alert('Not available yet');" class="material-icons" id="settings-icon">settings</a>
+            </div>
+        </footer>
+    </div>
+    <script src="./javascript/clockCode.js"></script>
+    <script type="text/javascript">
+        var dropdown = document.getElementById("dropdown");
+
+        dropdown.addEventListener("click", function () {
+            this.classList.toggle("show");
+        });
+    </script>
+    <script>
+        function darkMode() {
+            var x = document.getElementById("dark-mode");
+            if (x.innerHTML === "light_mode") {
+                x.innerHTML = "dark_mode";
+            } else {
+                x.innerHTML = "light_mode";
+            }
+        }
+    </script>
+</body>
+
+</html>
