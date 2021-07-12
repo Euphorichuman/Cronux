@@ -66,8 +66,8 @@
     transition: 0.3s ease-out;
 }
 .inner-circle:hover {
-    box-shadow: -5px -5px 15px var(--light-color), 
-                5px 5px 15px var(--shadow-color);
+    box-shadow: 5px 5px 15px var(--shadow-color),
+                -5px -5px 15px var(--light-color);
 }
 .play-button {
     width: 60px;
