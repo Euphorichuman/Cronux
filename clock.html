@@ -38,7 +38,7 @@
             <div class="digital-clock">
                 <div class="clock-field">
                     <div class="numbers">
-                        <p class="hours">00</p>
+                        <p class="hours" id="hr">00</p>
                         <p class="placeholder">88</p>
                         <p class="type">hour</p>
                     </div>
@@ -46,7 +46,7 @@
                         <p>:</p>
                     </div>
                     <div class="numbers">
-                        <p class="minutes">00</p>
+                        <p class="minutes" id="min">00</p>
                         <p class="placeholder">88</p>
                         <p class="type">minute</p>
                     </div>
@@ -54,7 +54,7 @@
                         <p>:</p>
                     </div>
                     <div class="numbers">
-                        <p class="seconds">00</p>
+                        <p class="seconds" id="sec">00</p>
                         <p class="placeholder">88</p>
                         <p class="type">second</p>
                     </div>
@@ -86,11 +86,13 @@
     <script>
         function darkMode() {
             var x = document.getElementById("dark-mode");
-            if (x.innerHTML === "light_mode") {
+            alert('Not available yet');
+            // TO DO
+            /*if (x.innerHTML === "light_mode") {
                 x.innerHTML = "dark_mode";
             } else {
                 x.innerHTML = "light_mode";
-            }
+            }*/
         }
     </script>
 </body>

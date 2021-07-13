@@ -9,8 +9,8 @@
     border-radius: 50%; 
     border: var(--light-gray) solid 10px;
     overflow: hidden;
-    box-shadow: 20px 20px 40px var(--shadow-color),
-                -15px -15px 35px var(--light-color),
+    box-shadow: 10px 10px 30px var(--shadow-color),
+                -10px -10px 25px var(--light-color),
                 inset 10px 10px 15px rgba(0, 0, 0, 0.1),
                 inset -10px -10px 15px rgba(255, 255, 255, 0.5);
 }
@@ -72,4 +72,29 @@
 .play-button {
     width: 60px;
     height: 60px;
-}   
+}
+
+.reset-button {
+    align-self: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #808080;
+    padding: 0.8em 2em;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background: var(--light-gray);
+    box-shadow: 20px 20px 40px var(--shadow-color),
+                -10px -10px 25px var(--light-color);
+}
+
+.reset-button:hover {
+    box-shadow: 5px 5px 15px var(--shadow-color),
+                -5px -5px 15px var(--light-color);
+}
+.reset-button:active {
+    box-shadow: inset 3px 3px 10px var(--shadow-color),
+                inset -3px -3px 10px var(--light-color);
+}

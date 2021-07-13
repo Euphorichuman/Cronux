@@ -1,7 +1,7 @@
+// Immediately-Invoked Function Expression (IIFE) to update clock with current time
 (() => {
     const init = () => {
         updateClock();
-        updatePlayButton();
         setInterval(() => {
             updateClock();
         }, 1000);
@@ -11,45 +11,6 @@
         resetClock();
         getCurrentTime();
         displayCurrentTime();
-    };
-
-    const updatePlayButton = () => {
-        playButton();
-    };
-
-    const playButton = () => {
-        var elems = document.getElementsByClassName("inner-circle");
-        var btn = document.getElementById("play");
-        var progressBar = document.getElementsByClassName("circularProgressBar");
-
-        for (var i = 0; i < elems.length; i++) {
-            elems[i].onclick = function () {
-                var color = window
-                    .getComputedStyle(this, null)
-                    .getPropertyValue("background-color");
-
-                if (color === "rgb(230, 248, 222)") {
-                    this.style.background = "#f0f0f3";
-                    this.style.border = 'var(--light-gray) solid 5px';
-                    this.style.boxShadow = '-5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color), inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color)';
-                    btn.innerHTML = '<img src="./source/stop.svg" alt="Play button">';
-
-                    for (var i = 0; i < progressBar.length; i++) { 
-                        progressBar[i].style.animation ='animate 1s linear infinite';
-                    }
-
-                } else {
-                    this.style.background = "rgb(230, 248, 222)";
-                    this.style.border = 'transparent solid 5px';
-                    this.style.boxShadow = '';
-                    btn.innerHTML = '<img src="./source/play.svg" alt="Play button">';
-
-                    for (var i = 0; i < progressBar.length; i++) { 
-                        progressBar[i].style.animation ='';
-                    }
-                };
-            };
-        };
     };
 
     const getCurrentTime = () => {
@@ -72,23 +33,27 @@
         let minutes = window.clock.time.minutes;
         let seconds = window.clock.time.seconds;
 
-        //formats hours
+        // Formats hours
         hours = (hours > 12) ? (hours - 12) : hours;
         hours = (hours === 0) ? 12 : hours;
         hours = (hours <= 9) ? ("0" + hours) : hours;
 
-        //formats minutes
+        // Formats minutes
         minutes = (minutes <= 9) ? ("0" + minutes) : minutes;
 
-        //formats seconds
+        // Formats seconds
         seconds = (seconds <= 9) ? ("0" + seconds) : seconds;
 
-        // targets the html
-        const hoursHtml = document.getElementsByClassName('hours')[0];
+        // Targets the html
+        /*const hoursHtml = document.getElementsByClassName('hours')[0];
         const minutesHtml = document.getElementsByClassName('minutes')[0];
-        const secondsHtml = document.getElementsByClassName('seconds')[0];
+        const secondsHtml = document.getElementsByClassName('seconds')[0];*/
 
-        // changes the html values
+        const hoursHtml = document.getElementById('hr');
+        const minutesHtml = document.getElementById('min');
+        const secondsHtml =document.getElementById('sec');
+
+        // Update the html values
         hoursHtml.innerHTML = hours;
         minutesHtml.innerHTML = minutes;
         secondsHtml.innerHTML = seconds;

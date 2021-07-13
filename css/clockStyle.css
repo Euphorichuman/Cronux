@@ -7,11 +7,10 @@
 }
 .digital-clock {
     margin: 8px;
-    padding: 1rem 3rem;
+    padding: 0.5rem 3rem;
     border: #a8a8a8 solid 2px;
-
+    border-radius: 25px;
     background: linear-gradient(145deg, #cbd3c5, #afbca2);
-    border-radius: 26px;
 }
 
 .clock-field {
