@@ -1,0 +1,101 @@
+.timer-settings-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 4;
+    width: 347.33px;
+    height: 400px;
+    padding: 2em 3em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #808080;
+    background-color: #f0f0f3;
+    border-radius: 30px;
+    box-shadow: 20px 20px 40px var(--shadow-color), 
+                -15px -15px 30px var(--light-color);
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.timer-settings-box.show {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+
+.timer-settings-box div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#minimize {
+    color: #808080;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.timer-settings-box div div{
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 145px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 40px var(--shadow-color),
+                -10px -10px 25px var(--light-color);
+}
+
+.timer-settings-box div div button{
+    height: 45px;
+    width: 45px;
+    color: #808080;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 150px;
+}
+
+.timer-settings-box div div button:active {
+    color: #000;
+    box-shadow: inset 5px 5px 19px  var(--shadow-color),
+                inset -5px -5px 19px var(--light-color);
+}
+
+.timer-settings-box div div p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.timer-settings-box .accept-button {
+    align-self: flex-end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #808080;
+    padding: 0.8em 2em;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background: var(--light-gray);
+    box-shadow: 20px 20px 40px var(--shadow-color),
+                -10px -10px 25px var(--light-color);
+}
+
+.timer-settings-box .accept-button:hover {
+    box-shadow: 5px 5px 15px var(--shadow-color),
+                -5px -5px 15px var(--light-color);
+}
+.timer-settings-box .accept-button:active {
+    box-shadow: inset 3px 3px 10px var(--shadow-color),
+                inset -3px -3px 10px var(--light-color);
+}
+

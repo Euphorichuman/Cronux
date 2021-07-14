@@ -63,7 +63,7 @@ header .dropdown {
     cursor: pointer;
 }
 
-header .options-dropdown{
+header .dropdown .options-dropdown{
     display: flex;
     align-items: center;
     margin-top: 0.5em;
@@ -169,14 +169,22 @@ footer div a {
     text-decoration: none;
 }
 
-footer .tools {
-    display: flex;
+footer div button {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #808080;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
+footer .tools {
+    display: flex;
+    align-items: center;
+}
 #code-icon {
-    margin-right: 10px;
+    margin-left: 16px;
 }
 
 #settings-icon {
-    margin-left: 20px;
+    margin-right: 16px;
 }

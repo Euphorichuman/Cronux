@@ -34,6 +34,39 @@
                 <i class="material-icons" id="dark-mode" onclick="darkMode();">light_mode</i>
             </div>
         </header>
+
+        <div class="timer-settings-box" id="timer-settings">
+            <div>
+                <p>Edit timer information</p>
+                <button onclick="showTimerOptions()" class="material-icons" id="minimize">close</button>
+            </div>
+            <div>
+                <p>Hours</p>
+                <div class="hours-selector">
+                    <button onclick="updateHours(this.id)" class="material-icons" id="sub-hr">horizontal_rule</button>
+                    <p id="hours">00</p>
+                    <button onclick="updateHours(this.id)" class="material-icons" id="add-hr">add</button>
+                </div>
+            </div>
+            <div>
+                <p>Minutes</p>
+                <div class="minutes-selector">
+                    <button onclick="updateMinutes(this.id)" class="material-icons" id="sub-min">horizontal_rule</button>
+                    <p id="minutes">00</p>
+                    <button onclick="updateMinutes(this.id)" class="material-icons" id="add-min">add</button>
+                </div>
+            </div>
+            <div>
+                <p>Seconds</p>
+                <div class="seconds-selector">
+                    <button onclick="updateSeconds(this.id)" class="material-icons" id="sub-sec">horizontal_rule</button>
+                    <p id="seconds">00</p>
+                    <button onclick="updateSeconds(this.id)" class="material-icons" id="add-sec">add</button>
+                </div>
+            </div>
+            <button onclick="updateClock()" class="accept-button">Accept</button>
+        </div>
+
         <div class="box-clock">
             <div class="digital-clock">
                 <div class="clock-field">
@@ -85,12 +118,15 @@
                     class="author-link">By Euphorichuman</a>
             </div>
             <div class="tools">
+                <button onclick="showTimerOptions()" class="material-icons" id="settings-icon">settings</button>
                 <a href="https://github.com/Euphorichuman/TimerWeb/blob/main/README.md" target="_blank"
                     rel="noopener noreferrer" class="material-icons" id="info-icon">info</a>
+                <!--<a class="material-icons" id="settings-icon">settings</a>-->
+                
             </div>
         </footer>
     </div>
-    <script src="./javascript/stopwatchCode.js"></script>
+    <script src="./javascript/timerCode.js"></script>
     <script type="text/javascript">
         var dropdown = document.getElementById("dropdown");
 
