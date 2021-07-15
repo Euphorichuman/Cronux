@@ -13,10 +13,10 @@ var sec = 0;
 var stoptime = true;
 
 // Function to start-pause the timer and circular progress bar animation
-function startTimer() {
+function startStopwatch() {
     if (stoptime == true) {
         stoptime = false;
-        timerCycle();
+        stopwatchCycle();
 
         playCircle.style.background = "#f0f0f3";
         playCircle.style.border = 'var(--light-gray) solid 5px';
@@ -42,7 +42,7 @@ function startTimer() {
 }
 
 // Function to count time and update in html
-function timerCycle() {
+function stopwatchCycle() {
     if (stoptime == false) {
         sec = parseInt(sec);
         min = parseInt(min);
@@ -77,12 +77,12 @@ function timerCycle() {
         minutes.innerHTML = min;
         seconds.innerHTML = sec;
 
-        setTimeout("timerCycle()", 1000);
+        setTimeout("stopwatchCycle()", 1000);
     }
 }
 
 // Function to reset the count time and circular progress bar animation
-function resetTimer() {
+function resetStopwatch() {
     hours.innerHTML = '00';
     minutes.innerHTML = '00';
     seconds.innerHTML = '00';
