@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronux</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/clockStyle.css">
+    <link rel="stylesheet" href="./css/stopwatchStyle.css">
+    <link rel="stylesheet" href="./css/timerStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <ul class="dropdown" id="dropdown">
+                <div class="options-dropdown">
+                    <i class="material-icons" id="dropdown-icon">chevron_right</i>
+                    <input type="text" value="Options" readonly="" id="input-option">
+                </div>
+
+                <!--Options list dropdown-->
+                <ul class="options" id="options">
+                    <li opName="Clock"><a href="./clock.html">Clock</a></li>
+                    <li opName="Stopwatch"><a href="./stopwatch.html">Stopwatch</a></li>
+                    <li opNme="Timer"><a href="./timer.html">Timer</a></li>
+                </ul>
+            </ul>
+            <p>CRONUX</p>
+            <div class="dark-mode">
+                <i class="material-icons" id="dark-mode" onclick="darkMode();">light_mode</i>
+            </div>
+        </header>
+
+        <div class="timer-settings-box" id="timer-settings">
+            <div>
+                <p>Edit timer information</p>
+                <button onclick="showTimerOptions()" class="material-icons" id="minimize">close</button>
+            </div>
+            <div>
+                <p>Hours</p>
+                <div class="hours-selector">
+                    <button onclick="updateHours(this.id)" class="material-icons" id="sub-hr">horizontal_rule</button>
+                    <p id="hours">00</p>
+                    <button onclick="updateHours(this.id)" class="material-icons" id="add-hr">add</button>
+                </div>
+            </div>
+            <div>
+                <p>Minutes</p>
+                <div class="minutes-selector">
+                    <button onclick="updateMinutes(this.id)" class="material-icons" id="sub-min">horizontal_rule</button>
+                    <p id="minutes">00</p>
+                    <button onclick="updateMinutes(this.id)" class="material-icons" id="add-min">add</button>
+                </div>
+            </div>
+            <div>
+                <p>Seconds</p>
+                <div class="seconds-selector">
+                    <button onclick="updateSeconds(this.id)" class="material-icons" id="sub-sec">horizontal_rule</button>
+                    <p id="seconds">00</p>
+                    <button onclick="updateSeconds(this.id)" class="material-icons" id="add-sec">add</button>
+                </div>
+            </div>
+            <button onclick="updateClockSettings()" class="accept-button">Accept</button>
+        </div>
+
+        <div class="box-clock">
+            <div class="digital-clock">
+                <div class="clock-field">
+                    <div class="numbers">
+                        <p class="hours" id="hr">00</p>
+                        <p class="placeholder">88</p>
+                        <p class="type">hour</p>
+                    </div>
+                    <div class="colon">
+                        <p>:</p>
+                    </div>
+                    <div class="numbers">
+                        <p class="minutes" id="min">00</p>
+                        <p class="placeholder">88</p>
+                        <p class="type">minute</p>
+                    </div>
+                    <div class="colon">
+                        <p>:</p>
+                    </div>
+                    <div class="numbers">
+                        <p class="seconds" id="sec">00</p>
+                        <p class="placeholder">88</p>
+                        <p class="type">second</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outer-circle">
+            <span class="circularProgressBar"></span>
+            <span class="circularProgressBar"></span>
+            <span class="circularProgressBar"></span>
+            <span class="circularProgressBar"></span>
+            <span class="circularProgressBar"></span>
+
+            <div class="middle-circle">
+                <button onclick="startTimer()" class="inner-circle" id="play-circle">
+                    <div class="play-button" id="play">
+                        <img src="./source/play.svg" alt="Play button">
+                    </div>
+                </button>
+            </div>
+        </div>
+        <button class="reset-button" onclick="resetTimer()">Reset</button>
+        <footer>
+            <div class="author-info">
+                <a href="https://github.com/Euphorichuman" target="_blank" rel="noopener noreferrer"
+                    class="material-icons" id="code-icon">code</a>
+                <a href="https://github.com/Euphorichuman" target="_blank" rel="noopener noreferrer"
+                    class="author-link">By Euphorichuman</a>
+            </div>
+            <div class="tools">
+                <button onclick="showTimerOptions()" class="material-icons" id="settings-icon">settings</button>
+                <a href="https://github.com/Euphorichuman/TimerWeb/blob/main/README.md" target="_blank"
+                    rel="noopener noreferrer" class="material-icons" id="info-icon">info</a>
+                <!--<a class="material-icons" id="settings-icon">settings</a>-->
+            </div>
+        </footer>
+    </div>
+    <script src="./javascript/timerCode.js"></script>
+    <script type="text/javascript">
+        var dropdown = document.getElementById("dropdown");
+
+        dropdown.addEventListener("click", function () {
+            this.classList.toggle("show");
+        });
+    </script>
+    <script>
+        function darkMode() {
+            var x = document.getElementById("dark-mode");
+            alert('Not available yet');
+            // TO DO
+            /*if (x.innerHTML === "light_mode") {
+                x.innerHTML = "dark_mode";
+            } else {
+                x.innerHTML = "light_mode";
+            }*/
+        }
+    </script>
+</body>
+
+</html>

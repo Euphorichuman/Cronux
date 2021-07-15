@@ -1,10 +1,3 @@
-let TOTAL_TIME = 8;
-const progress = document.querySelectorAll('.progress');
-const rightProgress = document.querySelector('.right .progress');
-progress[0].style.animation = `rotateAll ${TOTAL_TIME}s linear both`;
-progress[1].style.animation = `rotateAll ${TOTAL_TIME}s linear both`;
-progress[1].style.animationDelay = `${TOTAL_TIME}s`;
-
 (() => {
     const init = () => {
         updateClock();
