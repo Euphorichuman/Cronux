@@ -13,7 +13,7 @@ const secondsClock = document.getElementById('sec');
 
 // Variable for the alarm at the end of the timer
 var alarm;
-var alarmSound = new Audio('../source/mixkit-critical-alarm.wav');
+var alarmSound = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-scanning-sci-fi-alarm-905.mp3');
 
 function showTimerOptions() {
     timerSettings.classList.toggle("show");
