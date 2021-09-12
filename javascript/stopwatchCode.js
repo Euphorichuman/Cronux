@@ -18,8 +18,9 @@ function startStopwatch() {
         stoptime = false;
         stopwatchCycle();
 
-        playCircle.style.background = "#f0f0f3";
-        playCircle.style.border = 'var(--light-gray) solid 5px';
+        (icon.innerHTML == "light_mode") ? playCircle.style.background = "#fce8e8": playCircle.style.background = "#382e2e";
+        // playCircle.style.background = "#382e2e";
+        // playCircle.style.border = 'var(--light-gray) solid 5px';
         playCircle.style.boxShadow = '-5px -5px 15px var(--light-color), 5px 5px 15px var(--shadow-color), inset -3px -3px 10px var(--light-color), inset 3px 3px 10px var(--shadow-color)';
         playBtn.innerHTML = '<img src="./source/stop.svg" alt="Play button">';
 
@@ -30,8 +31,9 @@ function startStopwatch() {
     } else {
         stoptime = true;
 
-        playCircle.style.background = "rgb(230, 248, 222)";
-        playCircle.style.border = 'transparent solid 5px';
+        (icon.innerHTML == "light_mode") ? playCircle.style.background = "#e6f8de": playCircle.style.background = "#2e3830";
+        // playCircle.style.background = "#2e3830";
+        // playCircle.style.border = 'transparent solid 5px';
         playCircle.style.boxShadow = '';
         playBtn.innerHTML = '<img src="./source/play.svg" alt="Play button">';
 
@@ -91,8 +93,9 @@ function resetStopwatch() {
     sec = 0;
     min = 0;
 
-    playCircle.style.background = "rgb(230, 248, 222)";
-    playCircle.style.border = 'transparent solid 5px';
+    (icon.innerHTML == "light_mode") ? playCircle.style.background = "#e6f8de": playCircle.style.background = "#2e3830";
+    // playCircle.style.background = "#2e3830";
+    //playCircle.style.border = 'transparent solid 5px';
     playCircle.style.boxShadow = '';
     playBtn.innerHTML = '<img src="./source/play.svg" alt="Play button">';
 

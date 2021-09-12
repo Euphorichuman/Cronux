@@ -2,16 +2,16 @@
     align-self: center;
     background: var(--light-gray);
     border-radius: 30px;
-    border: 2px solid #f7f7f8;
+    border: 2px solid #333;
     box-shadow: 20px 20px 40px var(--shadow-color), -20px -20px 40px var(--light-color);
 }
 
 .digital-clock {
     margin: 8px;
     padding: 0.5rem 3rem;
-    border: #a8a8a8 solid 2px;
+    border: #111111 solid 2px;
     border-radius: 25px;
-    background: linear-gradient(145deg, #cbd3c5, #afbca2);
+    background: linear-gradient(145deg, #1a1a1a, #111111);
 }
 
 .clock-field {
@@ -25,7 +25,7 @@
 }
 
 .clock-field div p {
-    color: #333631;
+    color: #FF5C15;
     font-size: 90px;
     margin: 0;
     position: relative;
@@ -33,7 +33,7 @@
 }
 
 .clock-field .numbers .placeholder {
-    color: #adb7a4;
+    color: #4d1700;
     position: absolute;
     top: 0;
     z-index: 1;
@@ -41,7 +41,7 @@
 
 .clock-field .numbers .type {
     font-size: 15px;
-    color: #333631;
+    color: #FF5C15;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
