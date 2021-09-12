@@ -7,7 +7,7 @@
     height: 230px;
     width: 230px;
     border-radius: 50%;
-    border: var(--dark-grey) solid 10px;
+    border: var(--dark-gray) solid 10px;
     overflow: hidden;
     box-shadow: 10px 10px 30px var(--shadow-color), -10px -10px 25px var(--light-color), inset 10px 10px 20px var(--shadow-color)/*, inset -10px -10px 15px var(--light-color)*/
     ;
@@ -40,8 +40,8 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: var(--dark-grey) solid 10px;
-    background: var(--dark-grey);
+    border: var(--dark-gray) solid 10px;
+    background: var(--dark-gray);
     box-shadow: 10px 10px 30px var(--shadow-color), /*-10px -10px 15px var(--light-color),*/
     inset 20px 20px 40px var(--shadow-color), inset -15px -15px 35px var(--light-color);
 }
@@ -83,7 +83,7 @@
     outline: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    background: var(--dark-grey);
+    background: var(--dark-gray);
     box-shadow: 20px 20px 40px var(--shadow-color), -10px -10px 25px var(--light-color);
 }
 

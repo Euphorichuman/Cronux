@@ -27,7 +27,6 @@ const icon = document.getElementById("dark-mode");
     }
 })()
 
-
 //function to enable/disable the dark mode, with button
 function darkMode() {
     if (icon.innerHTML === "light_mode") {
@@ -36,11 +35,14 @@ function darkMode() {
         stopwatchStyle.href = './css/dark-theme/stopwatchStyleDark.css';
         timerStyle.href = './css/dark-theme/timerStyleDark.css';
         icon.innerHTML = 'dark_mode';
+        (stoptime) ? playCircle.style.background = "#2e3830": playCircle.style.background = "#382e2e";
+
     } else {
         generalStyle.href = './css/style.css';
         clockStyle.href = './css/clockStyle.css';
         stopwatchStyle.href = './css/stopwatchStyle.css';
         timerStyle.href = './css/timerStyle.css';
         icon.innerHTML = 'light_mode';
+        (stoptime) ? playCircle.style.background = "#e6f8de": playCircle.style.background = "#fce8e8";
     }
 }

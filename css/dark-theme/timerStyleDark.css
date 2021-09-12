@@ -13,7 +13,7 @@
     font-family: 'Neue Plak W01', sans-serif;
     font-size: 16px;
     color: var(--text-color);
-    background-color: var(--dark-grey);
+    background-color: var(--dark-gray);
     border-radius: 30px;
     border: 2px solid #333;
     box-shadow: 20px 20px 40px var(--shadow-color), -15px -15px 30px var(--light-color);
@@ -35,7 +35,7 @@
 }
 
 #minimize {
-    background: var(--dark-grey);
+    background: var(--dark-gray);
     color: var(--text-color);
     border: none;
     outline: none;
@@ -55,7 +55,8 @@
 .timer-settings-box div div button {
     height: 45px;
     width: 45px;
-    background: var(--dark-grey);
+    /*background: transparent;*/
+    background: var(--dark-gray);
     color: var(--text-color);
     border: none;
     outline: none;
@@ -81,7 +82,7 @@
     color: var(--text-color);
     padding: 0.8em 2em;
     border-radius: 50px;
-    border: none;
+    border: 2px solid #333;
     outline: none;
     cursor: pointer;
     -webkit-appearance: none;
