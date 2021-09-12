@@ -2,6 +2,7 @@
     align-self: center;
     background: var(--light-gray);
     border-radius: 30px;
+    border: 2px solid #f7f7f8;
     box-shadow: 20px 20px 40px var(--shadow-color), -20px -20px 40px var(--light-color);
 }
 

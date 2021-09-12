@@ -15,7 +15,7 @@
 
 :root {
     /* Colors */
-    --dark-grey: #2b2b2b;
+    --dark-gray: #2b2b2b;
     --text-color: #4b4b4b;
     --light-color: #2e2e2e;
     --shadow-color: #1a1a1a;
@@ -23,7 +23,7 @@
 
 body {
     font-family: 'digital-7', sans-serif;
-    background: var(--dark-grey);
+    background: var(--dark-gray);
 }
 
 .box {
@@ -38,7 +38,7 @@ body {
     top: 1rem;
     bottom: 1rem;
     z-index: 0;
-    background: var(--dark-grey);
+    background: var(--dark-gray);
     border-radius: 30px;
     border: 2px solid #333;
     /*border: 2px solid transparent;
@@ -103,6 +103,7 @@ header .dropdown input {
     border: none;
     outline: none;
     background: none;
+    -webkit-appearance: none;
 }
 
 header .dropdown i {
@@ -120,7 +121,7 @@ header .dropdown i {
     top: 80px;
     width: 8.5em;
     padding: 0;
-    background: var(--dark-grey);
+    background: var(--dark-gray);
     border-radius: 30px;
     border: 2px solid #333;
     box-shadow: 20px 20px 40px var(--shadow-color), -10px -10px 20px var(--light-color);
@@ -193,7 +194,7 @@ footer div a {
 
 footer div button {
     color: var(--text-color);
-    background: var(--dark-grey);
+    background: var(--dark-gray);
     border: none;
     outline: none;
     cursor: pointer;
