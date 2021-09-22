@@ -1,13 +1,19 @@
 /* Import fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
-@import url('//db.onlinewebfonts.com/c/d3a85c6c38eeb78ad624d05db74526bd?family=Neue+Plak+W01');
 
-/*@font-face {
+/*@import url('//db.onlinewebfonts.com/c/d3a85c6c38eeb78ad624d05db74526bd?family=Neue+Plak+W01');
+
+@font-face {
     font-family: "Neue Plak W01";
     src: url("//db.onlinewebfonts.com/t/d3a85c6c38eeb78ad624d05db74526bd.eot");
     src: url("//db.onlinewebfonts.com/t/d3a85c6c38eeb78ad624d05db74526bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d3a85c6c38eeb78ad624d05db74526bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d3a85c6c38eeb78ad624d05db74526bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/d3a85c6c38eeb78ad624d05db74526bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d3a85c6c38eeb78ad624d05db74526bd.svg#Neue Plak W01") format("svg");
 }*/
+
+@font-face {
+    font-family: "Neue Plak W01";
+    src: url('../source/Neue-Plak-W01-Wide-ExtraBlack.ttf');
+}
 
 @font-face {
     font-family: 'digital-7';
