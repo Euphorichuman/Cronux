@@ -63,7 +63,15 @@ const currentTheme = localStorage.getItem("theme");
  */
 function darkMode() {
     /*Save the current pathname where the user is in*/
-    let location = window.location.pathname;
+    let path = window.location.pathname;
+    let location = '';
+    for (var i = path.length; i >= 0; i--) {
+        location += path.charAt(i);
+        if (path.charAt(i) == "/") break
+    }
+
+    location = reverseString(location);
+    console.log(location)
 
     /*Currently user mode*/
     if (icon.innerHTML === "light_mode") {
@@ -78,6 +86,7 @@ function darkMode() {
         /*Update preference in localStorage*/
         localStorage.setItem("theme", "dark");
 
+        console.log(location);
         /*Change color in play-pause button*/
         if (location == "/stopwatch.html" || location == "/timer.html")
             (stoptime) ? playCircle.style.background = "#2e3830" : playCircle.style.background = "#382e2e";
@@ -98,4 +107,13 @@ function darkMode() {
         if (location == "/stopwatch.html" || location == "/timer.html")
             (stoptime) ? playCircle.style.background = "#e6f8de" : playCircle.style.background = "#fce8e8";
     }
+}
+
+/**
+ * Reversing a string with Conditional (Ternary) Operator
+ * @param  {String} str String to reversing
+ * @return {String}     Cuerda invertida
+ */
+function reverseString(str) {
+    return (str === '') ? '' : reverseString(str.substr(1)) + str.charAt(0);
 }
