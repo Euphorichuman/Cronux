@@ -5,6 +5,7 @@ Implementation of a clock, stopwatch, and timer web with Neumorphism GUI (Javasc
 ![CRONUX GUI](docs/CRONUX-GUI.jpg)
 
 ### Built with:
+
 - [Html5](https://html.spec.whatwg.org/multipage/)
 - [CSS](https://www.w3.org/TR/CSS1/)
 - [Vanilla Js](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -21,14 +22,22 @@ Implementation of a clock, stopwatch, and timer web with Neumorphism GUI (Javasc
 
 
 ## Contributions
+
 All **Pull Requests** are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Be sure to update the tests accordingly.
 
 ## Authors
+
 This design and implementation was created by was created by:
 
 - [Martin Fuentes](https://github.com/Euphorichuman)
+
+## License
+
+This project is under  MIT License. See the [LICENSE](docs/LICENSE) file for more details.
+
+[MIT License](https://opensource.org/licenses/MIT)
 
 ## Inspired by
 
